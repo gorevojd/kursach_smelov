@@ -13,8 +13,8 @@ import java.util.List;
 /*
 @RepositoryRestResource(collectionResourceRel = "players", path = "players")
 public interface PlayerRepository extends MongoRepository<Player, String>{
-    Player findByLogin(@Param("playerLogin") String playerLogin);
-    void deleteByLogin(@Param("playerLogin") String playerLogin);
+    Player findByLogin(@Param("login") String login);
+    Player deleteByLogin(@Param("login") String login);
 }
 */
 
