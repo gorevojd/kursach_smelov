@@ -26,6 +26,8 @@ public class DemoApplication implements CommandLineRunner{
 
 		this.repository.save(new Player("player1", "xxx"));
 		this.repository.save(new Player("player2", "xxx"));
+		this.repository.save(new Player("admin", "admin"));
+
 
 		System.out.println("Players found with findAll():");
 		System.out.println("-------------------------------");
