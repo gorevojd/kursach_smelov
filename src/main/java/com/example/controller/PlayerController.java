@@ -49,6 +49,10 @@ public class PlayerController {
         if(player != null){
             Player existPlayer;
             if((existPlayer = playerRepository.findByLogin(login)) != null) {
+
+                System.out.println("PUT METHOD: Player with login " + login + " found.");
+                System.out.println("PUT METHOD: Coin count: " + String.valueOf(player.getCoinCount()));
+
                 existPlayer.setLogin(player.getLogin());
                 existPlayer.setPassword(player.getPassword());
                 existPlayer.setRedDiamondCount(player.getRedDiamondCount());
@@ -56,6 +60,10 @@ public class PlayerController {
                 existPlayer.setBlueDiamondCount(player.getGreenDiamondCount());
                 existPlayer.setCoinCount(player.getCoinCount());
                 existPlayer.setLastLevel(player.getLastLevel());
+                playerRepository.save(existPlayer);
+            }
+            else{
+                System.out.println("PUT METHOD: Player with login " + login + " NOOOOOT found.");
             }
         }
         return playerRepository.findAll();
