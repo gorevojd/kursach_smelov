@@ -20,5 +20,5 @@ public interface PlayerRepository extends MongoRepository<Player, String>{
 
 public interface PlayerRepository extends MongoRepository<Player, String>{
     Player findByLogin(String login);
-    Player deleteByLogin(String login);
+    long deleteByLogin(String login);
 }
