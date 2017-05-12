@@ -57,7 +57,7 @@ public class PlayerController {
                 existPlayer.setPassword(player.getPassword());
                 existPlayer.setRedDiamondCount(player.getRedDiamondCount());
                 existPlayer.setGreenDiamondCount(player.getGreenDiamondCount());
-                existPlayer.setBlueDiamondCount(player.getGreenDiamondCount());
+                existPlayer.setBlueDiamondCount(player.getBlueDiamondCount());
                 existPlayer.setCoinCount(player.getCoinCount());
                 existPlayer.setLastLevel(player.getLastLevel());
                 playerRepository.save(existPlayer);
