@@ -22,6 +22,7 @@ public class DemoApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception{
+/*
 		this.repository.deleteAll();
 
 		this.repository.save(new Player("player1", "xxx"));
@@ -39,6 +40,7 @@ public class DemoApplication implements CommandLineRunner{
 		System.out.println("Players found with findByLogin()");
 		System.out.println("--------------------------------");
 		System.out.println(this.repository.findByLogin("player1"));
+*/
 	}
 
 	public static void main(String[] args) {
