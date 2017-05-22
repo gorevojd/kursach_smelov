@@ -253,8 +253,8 @@ public class WebClientController {
                                         "<td>" + players.get(PlayerIndex).getLastLevel() + "</td>" +
                                         "<td>" + players.get(PlayerIndex).getCoinCount() + "</td>" +
                                         "<td>" + players.get(PlayerIndex).getRedDiamondCount() + "</td>" +
-                                        "<td>" + players.get(PlayerIndex).getBlueDiamondCount() + "</td>" +
-                                        "<td>" + players.get(PlayerIndex).getGreenDiamondCount() + "</td>");
+                                        "<td>" + players.get(PlayerIndex).getGreenDiamondCount() + "</td>" +
+                                        "<td>" + players.get(PlayerIndex).getBlueDiamondCount() + "</td>");
 
                         pw.write("</tr>");
                     }
