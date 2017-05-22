@@ -9,16 +9,8 @@
 
 <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
 <br/>
+
 <form method="post" th:action="@{/web_client_action}">
-<!--
-    <input type="text" name="login" id="login" placeholder="Login"/><br/>
-    <input type="password" name="password" id="password" placeholder="Password"/><br/>
-    <input type="text" name="lastLevel" id="lastLevel" placeholder="lastLevel"/><br/>
-    <input type="text" name="coinCount" id="coinCount" placeholder="coinCount"/><br/>
-    <input type="text" name="redDiamondCount" id="redDiamondCount" placeholder="redDiamondCount"/><br/>
-    <input type="text" name="greenDiamondCount" id="greenDiamondCount" placeholder="greenDiamondCount"/><br/>
-    <input type="text" name="blueDiamondCount" id="blueDiamondCount" placeholder="blueDiamondCount"/><br/>
--->
     <input type="text" name="login" id="login" placeholder="Login" th:value="${playerLogin}"/><br/>
     <input type="text" name="password" id="password" placeholder="Password" th:value="${playerPassword}"/><br/>
     <input type="text" name="lastLevel" id="lastLevel" placeholder="lastLevel" th:value="${playerLastLevel}"/><br/>
@@ -31,7 +23,9 @@
     <button type="submit" name="action" value="Add">Add</button>
     <button type="submit" name="action" value="Delete">Delete</button>
     <button type="submit" name="action" value="Update">Update</button>
-
+    <br/>
+    <button type="submit" name="action" value="FindAll">FindAll</button>
+    <button type="submit" name="action" value="DeleteAll" onclick="return confirm('Are you sure?');">DeleteAll</button>
 </form>
 
 <br/>
