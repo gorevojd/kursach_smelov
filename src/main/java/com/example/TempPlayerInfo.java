@@ -11,6 +11,4 @@ public class TempPlayerInfo {
     public int info_RedDiamondCount;
     public int info_GreenDiamondCount;
     public int info_BlueDiamondCount;
-
-
 }
